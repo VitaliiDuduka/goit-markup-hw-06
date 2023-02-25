@@ -635,7 +635,7 @@ a {
   color: #434455;
 }
 
-/* MODAL WINDOW and BACKDRAP */
+/* MODAL WINDOW and BACKDROP */
 
 .backdrop {
   position: fixed;
@@ -659,7 +659,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 576px;
+  /* height: 576px; */
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -703,7 +703,6 @@ a {
 }
 .modal-form-title {
   margin-top: 48px;
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -714,6 +713,10 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.inputs {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .modal-form-field {
 }
@@ -733,10 +736,11 @@ a {
   border-radius: 4px;
   margin-bottom: 8px;
 }
+
 .modal-form-input-field:hover .modal-form-input,
-.modal-form-input-field:focus .modal-form-input {
-  border: 1px solid #4d5ae5;
-  outline: none;
+.modal-form-input:focus-visible {
+  /* for overriding default browser outline behavior best practice is to override outline, rather than set it to "none", stick to that to work with your focuses and hovers */
+  outline: 1px solid #4d5ae5;
 }
 
 .modal-form-comment {
@@ -748,6 +752,12 @@ a {
   border-radius: 4px;
   resize: none;
 }
+
+.modal-form-comment:hover{
+    outline: 1px solid #4d5ae5;
+
+}
+
 .modal-form-check {
   width: 16px;
   height: 16px;
@@ -759,9 +769,31 @@ a {
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: #757575;
+  margin-left: 8px;
 }
 .modal-form-submit {
+  background: var(--logo-web-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  color: var(--main-hero-color);
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--btn-accent-color);
+}
+
 .privacy-decor {
   text-decoration: underline;
   color: #4d5ae5;
@@ -771,7 +803,7 @@ a {
 }
 
 .modal-form-input-field:hover .modal-form-icon,
-.modal-form-input-field:focus .modal-form-icon {
+.modal-form-input-field:focus-within .modal-form-icon {
   fill: #4d5ae5;
 }
 
@@ -782,4 +814,8 @@ a {
   top: 8px;
   left: 16px;
   fill: #2e2f42;
+}
+.checkbox-accept {
+  display: flex;
+  align-content: center;
 }

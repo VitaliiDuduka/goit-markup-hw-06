@@ -442,75 +442,93 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label class="modal-form-field">
-            <span class="modal-form-descript">Name</span>
-            <div class="modal-form-input-field">
-              <input
-                type="text"
-                name="user_name"
-                class="modal-form-input"
-                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-                minlength="2"
-              />
-              <svg class="modal-form-icon">
-                <use href="./images/sprite.svg#icon-personblack"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-form-field">
-            <span class="modal-form-descript">Phone</span>
-            <div class="modal-form-input-field">
-              <input
-                type="tel"
-                name="user_phone"
-                class="modal-form-input"
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
-              />
-              <svg class="modal-form-icon">
-                <use href="./images/sprite.svg#icon-phoneblack"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-form-field">
-            <span class="modal-form-descript">Email</span>
-            <div class="modal-form-input-field">
-              <input
-                type="email"
-                name="user_mail"
-                class="modal-form-input"
-                required
-              />
-              <svg class="modal-form-icon">
-                <use href="./images/sprite.svg#icon-emailblack"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-form-field">
-            <span class="modal-form-descript">Comment</span>
-            <textarea
-              name="user_comment"
-              class="modal-form-comment"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <input
-            id="user-policy"
-            type="checkbox"
-            name="user_accept"
-            value="accepted"
-            class="modal-form-check"
-          />
-          <label for="user-policy" class="modal-form-check-desc"
-            >I accept the terms and conditions of the
-            <a href="" class="privacy-decor">Privacy Policy</a>
-          </label>
+          <div class="inputs">
+            <label class="modal-form-field">
+              <span class="modal-form-descript">Name</span>
+              <div class="modal-form-input-field">
+                <input
+                  type="text"
+                  name="user_name"
+                  class="modal-form-input"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                  minlength="2"
+                />
+                <svg class="modal-form-icon">
+                  <use href="./images/sprite.svg#icon-personblack"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-descript">Phone</span>
+              <div class="modal-form-input-field">
+                <input
+                  type="tel"
+                  name="user_phone"
+                  class="modal-form-input"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="xxx-xxx-xx-xx"
+                />
+                <svg class="modal-form-icon">
+                  <use href="./images/sprite.svg#icon-phoneblack"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-descript">Email</span>
+              <div class="modal-form-input-field">
+                <input
+                  type="email"
+                  name="user_mail"
+                  class="modal-form-input"
+                  required
+                />
+                <svg class="modal-form-icon">
+                  <use href="./images/sprite.svg#icon-emailblack"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-descript">Comment</span>
+              <textarea
+                name="user_comment"
+                class="modal-form-comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <div class="checkbox-accept">
+            <input
+              id="user-policy"
+              type="checkbox"
+              name="user_accept"
+              value="accepted"
+              class="modal-form-check"
+            />
+            <label for="user-policy" class="modal-form-check-desc"
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-decor">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal,js"></script>
+    <!-- <script>
+      let isAppreciationShown = false;
+      window.onpointermove = () => {
+        if (!isAppreciationShown) {
+          isAppreciationShown = true;
+          setTimeout(() => {
+            prompt(
+              'URGENT MESSAGE from Sasha: \n\nGreat job, keep it up! \nGL&HF',
+              'I will!'
+            );
+          }, 5 * 1000);
+        }
+      };
+    </script> -->
   </body>
 </html>
