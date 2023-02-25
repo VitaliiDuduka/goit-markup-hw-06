@@ -444,33 +444,48 @@
         <form class="modal-form">
           <label class="modal-form-field">
             <span class="modal-form-descript">Name</span>
-            <input
-              type="text"
-              name="user_name"
-              class="modal-form-input"
-              pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-              minlength="2"
-            />
+            <div class="modal-form-input-field">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                minlength="2"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-personblack"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-descript">Phone</span>
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-form-input"
-              required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-            />
+            <div class="modal-form-input-field">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-phoneblack"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-descript">Email</span>
-            <input
-              type="email"
-              name="user_mail"
-              class="modal-form-input"
-              required
-            />
+            <div class="modal-form-input-field">
+              <input
+                type="email"
+                name="user_mail"
+                class="modal-form-input"
+                required
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-emailblack"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-descript">Comment</span>
