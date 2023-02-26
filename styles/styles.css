@@ -187,7 +187,7 @@ a {
   color: var(--accent-color);
 }
 
-/* MAIN HERO */
+/* ===================MAIN HERO ====================*/
 
 .main-hero {
   /* position: relative; */
@@ -440,7 +440,7 @@ a {
   fill: currentColor;
 }
 
-/* FOOTER */
+/* =======================FOOTER=================== */
 
 .footer {
   background-color: var(--background-color);
@@ -510,8 +510,75 @@ a {
   width: 24px;
   height: 24px;
 }
+.subscribe-block {
+  margin-left: 80px;
+}
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+}
 
-/* PORTFOLIO */
+.subscribe-form-field {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  color: var(--main-hero-color);
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  align-self: center;
+}
+
+.subscribe-form-input:focus {
+  outline: 1px solid #4d5ae5;
+  border-radius: 4px;
+}
+
+.subscribe-submit-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  color: var(--main-hero-color);
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.subscribe-submit-btn:focus,
+.subscribe-submit-btn:hover {
+  background-color: var(--accent-color);
+}
+/* =======================FOOTER=================== */
+
+/* ========================PORTFOLIO============== */
 
 .border {
   border-bottom: 1px solid #e7e9fc;
@@ -634,7 +701,7 @@ a {
   color: #434455;
 }
 
-/* MODAL WINDOW and BACKDROP */
+/* ===============MODAL WINDOW and BACKDROP======== */
 
 .backdrop {
   position: fixed;
@@ -758,9 +825,9 @@ a {
 
 .modal-form-comment::placeholder {
   font-size: 12px;
-line-height: calc(16/12);
-letter-spacing: 0.04em;
-color: rgba(117, 117, 117, 0.5);
+  line-height: calc(16 / 12);
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-check {
@@ -768,15 +835,37 @@ color: rgba(117, 117, 117, 0.5);
   height: 16px;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
-  background-color: var(--accent-color);
 }
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-image: url(../images/vectorclick.svg);
+}
+
+.modal-form-check:focus + .modal-form-check-desc::before {
+  border: 1.25px solid var(--accent-color);
+  border-radius: 2px;
+}
+
 .modal-form-check-desc {
+  display: flex;
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: #757575;
   margin-left: 8px;
 }
+
+.modal-form-check-desc::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
 .modal-form-submit {
   background: var(--logo-web-color);
   font-weight: 500;
@@ -789,8 +878,8 @@ color: rgba(117, 117, 117, 0.5);
   padding: 16px 32px;
   border: none;
   margin-top: 24px;
-  margin-right: auto;
-  margin-left: auto;
+  align-self: center;
+  min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
