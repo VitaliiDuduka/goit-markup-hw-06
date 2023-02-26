@@ -552,7 +552,6 @@ a {
 
 .subscribe-form-input:focus {
   outline: 1px solid #4d5ae5;
-  border-radius: 4px;
 }
 
 .subscribe-submit-btn {
