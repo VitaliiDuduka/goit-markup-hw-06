@@ -728,7 +728,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   transition: transform 250ms linear;
 }
 
@@ -766,7 +766,6 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-title {
-  margin-top: 48px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -807,8 +806,7 @@ a {
   /* for overriding default browser outline behavior best practice is to override outline, rather than set it to "none", stick to that to work with your focuses and hovers */
   /* outline: 1px solid #4d5ae5; */
   outline: none;
-    border: 1px solid #4d5ae5;
-
+  border: 1px solid #4d5ae5;
 }
 
 .modal-form-comment {
@@ -819,15 +817,13 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-comment:focus {
   /* outline: 1px solid #4d5ae5; */
-    outline: none;
-    border: 1px solid #4d5ae5;
-
+  outline: none;
+  border: 1px solid #4d5ae5;
 }
 
 .modal-form-comment::placeholder {
@@ -918,7 +914,6 @@ a {
   left: 16px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .checkbox-accept {
   display: flex;
