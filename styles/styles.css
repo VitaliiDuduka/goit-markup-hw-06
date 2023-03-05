@@ -783,7 +783,13 @@ a {
   margin-bottom: 16px;
 }
 .modal-form-field {
+  display: block;
+    margin-bottom: 8px;
+
 }
+.modal-form-textarea {
+}
+
 .modal-form-descript {
   display: block;
   font-size: 12px;
@@ -798,7 +804,6 @@ a {
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 8px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -911,7 +916,8 @@ a {
   width: 18px;
   height: 24px;
   position: absolute;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
